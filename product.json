@@ -1,0 +1,75 @@
+{
+    "secondHandBook": [
+     
+       {
+          "id":1,
+          "name": "Harry Potter and the Philosopher's Stone",
+          "language": "English",
+          "author": "J.K. Rowling",
+          "currency": "SGD",
+          "price": 10,
+          "image" : "harrypotter1.jpg"
+       },
+     
+       {
+        "id":2,
+        "name": "Harry Potter and the Chamber of Secret",
+        "language": "English",
+        "author": "J.K. Rowling",
+        "currency": "SGD",
+        "price": 15,
+        "image" : "harrypotter2.jpg"
+       },
+
+       {
+        "id":3,
+        "name": "Harry Potter and the Prisoner of Akzkaban",
+        "language": "English",
+        "author": "J.K. Rowling",
+        "currency": "SGD",
+        "price": 20,
+        "image" : "harrypotter3.jpg"
+
+       },
+
+       {
+            "id":4,
+            "name": "Harry Potter and the Goblet of Fire",
+            "language": "English",
+            "author": "J.K. Rowling",
+            "currency": "SGD",
+            "price": 20,
+            "image" : "harrypotter4.jpg"        
+       },
+
+       {
+            "id":5,
+            "name": "Easy Spanish",
+            "language": "Spanish",
+            "author": "Barbara Breigstein",
+            "currency": "SGD",
+            "price": 5,
+            "image" : "easyspanish.jpg"
+       },
+
+
+       {
+        "id":6,
+        "name": "Ultimate Spanish",
+        "language": "Spanish",
+        "author": "Barbara Breigstein",
+        "currency": "SGD",
+        "price": 5,
+        "image": "ultimatespanish.jpg"
+   }
+
+    ],
+
+    "currencyCoversion": [
+        {
+        "fromCurrency" : "SGD",
+        "toCurrency": "MYR",
+        "coversionRate": 3
+        }
+    ]
+ }

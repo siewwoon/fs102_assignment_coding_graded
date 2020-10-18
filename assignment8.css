@@ -1,0 +1,282 @@
+.general{ 
+    background-color: #f4fbfe;
+    margin: 100px;
+}
+
+ul {
+list-style-type:none;
+margin: 10px;
+padding: 10px;
+overflow:auto;
+}
+
+ul li {
+    display: inline;
+    padding: 10%;   
+}
+
+li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+
+ a:link {
+    color: black;
+}
+
+a:visited {
+    color:red;
+}
+
+a:hover {
+    color: blueviolet;
+  }
+
+.container {
+    position: relative;
+    text-align:center;
+    color:black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.centreleft {
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    display: block;
+    letter-spacing: 1px;
+
+}
+
+@keyframes moveInLeft {
+    0% { 
+        opacity: 0;
+        transform: translateX {-10px};
+
+    }
+
+    70% {
+        transform: translateX {28px};
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% { 
+        opacity: 0;
+        transform: translateX {10px};
+
+    }
+
+    70% {
+        transform: translateX {28px};
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.bigtitle {
+    color: black;
+    text-shadow: grey;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+   
+}
+
+.designation{
+    color: black;
+    text-shadow: grey;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 35px;
+    animation-name: moveInRight;
+    animation-duration: 5s;
+ 
+}
+
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding:0px;
+    width:auto;
+    grid-column-gap: 10px;
+    grid-row-gap:none;
+    margin-top: 30px;
+}
+
+.grid-item {  
+    padding: 20px 10px;
+    grid-row-gap: 20px;
+}
+
+.aboutme {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    box-sizing: border-box;
+    background: whitesmoke;
+    height: 200px;
+    letter-spacing: 1px;
+}
+
+.p {
+    letter-spacing: 1px;
+}
+
+.skillsets {
+    grid-column:4/7;
+    grid-row: 1;
+    box-sizing: border-box;
+    background-color:whitesmoke;
+    height: 60%;
+    letter-spacing: 1px;
+}
+
+.languagebox {
+    box-sizing:border-box;
+    /* box-shadow: 0 20px 50px; */
+    width: 100%;
+    margin:20px 0;
+
+}
+
+.languagebox p {
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding:0;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.languagebox p:nth-child(2) 
+{   float: right;
+    position: relative;
+    top: -28px;
+}
+
+.skill {
+    background: grey;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.proficiency_level {
+    background: skyblue;
+    width: 100%;
+    height: 15px;
+}
+
+.travel {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin-top: 230px;
+}
+
+.subtitle{
+    font-size: 30px;
+    text-align: center;
+    font:bolder;
+    background-color:#dbe6ec ;
+    margin:10px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+table, td, th {
+    border: none;
+    letter-spacing: 1px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  .bucketlist {
+    grid-column: 4/ 7;
+    grid-row: 1;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin-top: 550px;
+}
+
+
+.gridcontainer2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding:0px;
+    width:auto;
+    grid-column-gap: 10px;
+    grid-row-gap:none;
+    margin-top: 30px;
+}
+
+.socialmedia {
+    grid-column:1/2;
+    grid-row: 1;
+    box-sizing: border-box;
+    background-color:whitesmoke;
+    height: 100%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;  
+}
+
+
+.contactform {
+    grid-column:2/6;
+    grid-row: 1;
+    box-sizing: border-box;
+    background-color:whitesmoke;
+    height: 100%;
+}
+
+.data {
+    box-sizing: border-box;
+    width: 100%;
+    margin:10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="grid-item-"] {
+    width: 100%;
+  }
+}
